@@ -1,0 +1,411 @@
+* {
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+}
+li {
+   list-style: none;
+}
+a {
+   text-decoration: none;
+}
+.color-white{
+   color: white;
+}
+.color-gray{
+   color:gray;
+}
+.padding15{
+   padding:15px 0;
+}
+.block{
+   display:block;
+}
+.font{
+   font-family: Segoe UI,SegoeuiPc,San Francisco,Helvetica Neue,Helvetica,Lucida Grande,Roboto,Ubuntu,Tahoma,Microsoft Sans Serif,Arial,sans-serif;
+}
+.weight500{
+   font-weight: 500;
+}
+.container-box{
+   height: 100vh;
+   display: flex;
+   flex-direction: row;
+}
+
+/* ---------- container-icon ---------- */
+.container-icon{
+   position: relative;
+   flex:1;
+   display: flex;
+   flex-direction: column;
+   background-color: #09A3FF;
+   justify-content: space-between;
+}
+.icon-above{
+   flex:1;
+   position: relative;
+}
+.icon-below{
+   flex:4;
+}
+.container-menu{
+   flex:4;
+   position: relative;
+}
+.container-chat{
+   flex:10;
+   height: 100vh;
+   overflow: hidden;
+}
+.image-avatar{
+   margin:20px auto; 
+   border:1px solid white;
+   border-radius: 50px;
+   width: 50px;
+   height: 50px;
+   overflow: hidden;
+}
+
+.active-green{
+   width:10px;
+   height: 10px;
+   border-radius: 50%;
+   position: absolute;
+   left:57px;
+   top:57px;
+   border:1px solid white;
+   background-color:green;
+}
+.list-options li{
+   text-align: center;
+}
+.list-options li:hover{
+   background-color:rgba(0,0,0,.2);
+}
+.list-options li i{
+   font-size:30px;
+}
+
+.box-below{
+   margin:20px auto;
+}
+.list-setting li i{
+   font-size:30px;
+}
+
+.hover-set li:hover{
+   background:none;
+}
+
+
+/* ---------- container-menu ---------- */
+.container-menu{
+   border-right:1px solid #ededed;
+}
+.clear-fix:after{
+   content: "";
+   display: block;
+   clear:both;
+}
+
+.name-zalo{
+   font-size: 16px;
+   font-weight: 500;
+   padding:15px 15px 0 15px;
+}
+.container-search{
+   padding:15px 0;
+   border-bottom: 1px solid #ededed;
+}
+.search-user-group{
+   width:90%;
+   margin:0 auto;
+}
+.search{
+   float:left;
+   border:1px solid #ededed;
+   border-radius: 15px;
+   background-color: #ededed;
+   width:70%;
+   padding: 2px 5px;
+}
+.search:hover{
+   background-color: white;
+   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2),
+               -2px -2px 2px -2px rgba(0, 0, 0, 0.2);
+}
+.search:hover input{
+   background-color:white;
+}
+.input-search{
+   width:90%;
+   border:none;
+   outline:none;
+   background-color: #ededed;
+}
+.user{
+   margin-left: 15px;
+}
+.category-box{
+   width:90%;
+   margin:10px auto;
+}
+.text{
+   float: left;
+   font-size: 14px;
+   font-weight: 500;
+}
+.group-tag{
+   float:right;
+}
+.group-tag a{
+   padding:0 10px;
+   color:gray;
+}
+.item-category{
+   padding-bottom: 10px;
+   border-bottom: 1px solid #ededed;
+}
+.item-choose{
+   color:gray;
+   position: relative;
+}
+.icon-close{
+   position: absolute;
+   bottom:16px;
+   right:5px;
+   font-size:12px;
+   visibility: hidden;
+   opacity: 0;
+}
+
+.item-choose li:hover{
+   background-color:#0068ff;
+   color:white;
+}
+.item-choose .active-choose{
+   background-color:#0068ff;
+   color:white;
+}
+.item-choose:hover>.icon-close{
+   visibility: visible;
+   opacity: 1;
+}
+.item-category ul li{
+   font-size: 13px;
+   margin-top: 10px;
+   background-color: #ededed;
+   border-radius: 15px;
+   display: inline-block;
+   padding:2px 8px;
+}
+#message{
+   margin-top:10px;
+   width: 80px;
+   border:none;
+   outline:0;
+   float: left;
+   color:gray;
+}
+#message option{
+   color:gray;
+}
+.have-read{
+   margin-top:10px;
+   float:right;
+   font-size:13px;
+}
+.have-read a{
+   color:gray;
+}
+.have-read a:hover{
+   color:#0068ff;
+}
+.list-chat{
+   overflow: scroll;
+   width:100%;
+   height: 435px;
+}
+.item-chat{
+   padding: 0 15px;
+   margin:0 auto;
+   padding-top:4px;
+   background-color:#fafafc;
+   cursor: pointer;
+   display: flex;
+   justify-content: space-between;
+   align-self: center;
+}
+.item-chat:hover{
+   background-color:#f2f5fa;
+}
+.border-bottom{
+   border-bottom:1px solid #ededed;
+}
+.image-item{
+   flex:1;
+}
+.content-item{
+   flex:5;
+   align-self: center;
+   margin-left: 10px;
+   line-height: 20px;
+}
+.image-item img{
+   width:52px;
+   height:52px;
+   border-radius: 50%;
+   border:1px solid white;
+}
+.content{
+   display:flex;
+   justify-content: space-between;
+}
+.item-text{
+   font-size: 13px;
+   font-weight: normal;
+   color:gray;
+}
+
+/* ---------- container-chat ---------- */
+.title-box-chat{
+  margin-top: 100px;
+}
+.welcome-zalo{
+   display: flex;
+   justify-content: center;
+   font-weight: 500;
+   font-size: 20px;
+   margin-bottom: 5px;
+}
+.descriptions{
+   display: flex;
+   justify-content: center;
+   width:500px;
+   text-align: center;
+   margin:0 auto;
+   font-size: 13px;
+   line-height: 20px;
+}
+
+
+/* ----------box-container-slideshow---------- */
+.descriptions-slide{
+   text-align: center;
+   margin-left: calc(50% - 500px);
+}
+.descriptions-slide span{
+   font-size:13px;
+}
+.box-container-slideshow{
+   width:80%;
+   height:700px;
+   overflow: hidden;
+   /* background-color:pink; */
+   margin:0 auto;
+   position: relative;
+}
+.box-slide{
+   overflow: hidden;
+   width:100%;
+   height: 500px;
+}
+.box-item-slide{
+   position: absolute;
+   top:0;
+   left: 0;
+   width:100%;
+   padding-left: calc(50% - 190px);
+   opacity: 0;
+   visibility: hidden;
+}
+.box-item-slide.active{
+   opacity: 1;
+   visibility: visible;
+}
+.image-slide img{
+   width:380px;
+   height: 228px;
+   margin:0 auto;
+}
+
+#btn-prev, #btn-next{
+   z-index: 100;
+   position: absolute;
+   top:110px;
+   font-size: 30px;
+   cursor: pointer;
+}
+#btn-prev{
+   left:0;
+}
+#btn-next{
+   right: 0;
+}
+.list-dot{
+   position: absolute;
+   top:280px;
+   left: calc(50% - 60px)
+}
+.list-dot li{
+   width: 8px;
+   height: 8px;
+   background-color:gray;
+   margin: 5px;
+   display:inline-block;
+   border-radius: 10px;
+   cursor: pointer;
+   opacity: 0.3;
+}
+.list-dot li.active_slide{
+   opacity: 1;
+}
+
+
+/* ----------animation slide---------- */
+.bien-mat-ben-trai{
+   animation: bien-mat-ben-trai 1s forwards;
+}
+@-webkit-keyframes bien-mat-ben-trai{
+   from{
+      transform: translateX(0%);
+   }
+   to{
+      transform: translateX(-100%);
+   }
+}
+.di-vao-ben-phai{
+   animation: di-vao-ben-phai 1s forwards;
+}
+@-webkit-keyframes di-vao-ben-phai{
+   from{
+      transform: translateX(100%);
+   }
+   to{
+      transform: translateX(0%);
+   }
+}
+/*xử lý nút prev*/
+.bien-mat-ben-phai{
+   animation: bien-mat-ben-phai 1s forwards;
+}
+@-webkit-keyframes bien-mat-ben-phai{
+   from{
+      transform: translateX(0%);
+   }
+   to{
+      transform: translateX(100%);
+   }
+}
+.di-vao-ben-trai{
+   animation: di-vao-ben-trai 1s forwards;
+}
+@-webkit-keyframes di-vao-ben-trai{
+   from{
+      transform: translateX(-100%);
+   }
+   to{
+      transform: translateX(0%);
+   }
+}
